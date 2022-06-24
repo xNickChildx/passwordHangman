@@ -12,7 +12,7 @@ def getData() -> list:
     lib = []
     with open(dataFile, "r") as f:
         lib.extend(iter(f))
-    print("# of Lines " + str(len(lib)))
+    print(f"# of Lines {len(lib)}")
     return lib
 
 
