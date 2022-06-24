@@ -37,7 +37,7 @@ def getRandomWord() -> "tuple[int, str]":
     """Select random word from the list
 
     Returns:
-            tuple[int, str]: Tuple of rank of the most common password with its passord
+            tuple[int, str]: Tuple of rank of the most common password with its password
     """
     rank = random.randint(0, 999)
     word = library[rank]
@@ -157,7 +157,7 @@ def runGame() -> bool:
             roundsLeft += 1
 
     print(
-        "Embaressing! You have could not guess the #"
+        "Embarrassing! You have could not guess the #"
         + str(rank)
         + " most used password "
         + "".join(word)
