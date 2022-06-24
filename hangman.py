@@ -52,9 +52,7 @@ def getNextGuess() -> str:
     """
 
     try:
-        val = list(input("Enter your next guess :\t>"))
-        if not val:
-            val = getNextGuess()
+        val = list(input("Enter your next guess :\t>")) or getNextGuess()
         return val[0]
     except (KeyboardInterrupt, EOFError):
         exit()
